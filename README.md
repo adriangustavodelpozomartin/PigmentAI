@@ -9,7 +9,7 @@
 
 ![Portada de PigmentAI](./pigmentAI)
 
-PigmentAI es un proyecto multidisciplinar que une arte e inteligencia artificial a través de un pipeline completo para el tratamiento de imágenes. Aquí encontrarás desde el análisis exploratorio de colecciones de cuadros hasta la generación de nuevas obras, pasando por:
+PigmentAI es un proyecto multidisciplinar que une arte e inteligencia artificial a través de un pipeline completo para el tratamiento de imágenes. PigmentAI combina técnicas de procesamiento de imágenes, Machine Learning clásico y Deep Learning para ofrecer un flujo de trabajo completo en el dominio del arte digital. Desde la exploración inicial de datos (EDA) hasta el entrenamiento de modelos desde cero, pasando por la adaptación de arquitecturas preentrenadas, detección de objetos, reconocimiento facial y generación de nuevas imágenes con GANs, este repositorio muestra cómo la inteligencia artificial puede analizar y crear arte de forma profesional. Aquí encontrarás desde el análisis exploratorio de colecciones de cuadros hasta la generación de nuevas obras, pasando por:
 
 - **Análisis Exploratorio de Datos (EDA):** inspección de tipos de imagen, distribución de píxeles y balanceo de clases.  
 - **Modelos de Machine Learning clásico:** extracción de características y pruebas con clasificadores tradicionales.  
@@ -37,11 +37,6 @@ PigmentAI es un proyecto multidisciplinar que une arte e inteligencia artificial
 - [Requisitos](#requisitos)  
 - [Autores](#autores)
 
----
-
-## Descripción del Proyecto
-
-PigmentAI combina técnicas de procesamiento de imágenes, Machine Learning clásico y Deep Learning para ofrecer un flujo de trabajo completo en el dominio del arte digital. Desde la exploración inicial de datos (EDA) hasta el entrenamiento de modelos desde cero, pasando por la adaptación de arquitecturas preentrenadas, detección de objetos, reconocimiento facial y generación de nuevas imágenes con GANs, este repositorio muestra cómo la inteligencia artificial puede analizar y crear arte de forma profesional.
 
 ---
 
