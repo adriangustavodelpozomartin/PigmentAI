@@ -1,6 +1,6 @@
 # PigmentAI
 *Visión inteligente del arte*
-![Portada de PigmentAI](./pigmentAI.png)
+![Portada de PigmentAI](./pigmentAI)
 
 MuseVision es un proyecto multidisciplinar que une arte e inteligencia artificial a través de un pipeline completo para el tratamiento de imágenes. Aquí encontrarás desde el análisis exploratorio de colecciones de cuadros hasta la generación de nuevas obras, pasando por:
 
