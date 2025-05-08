@@ -3,7 +3,7 @@
 
 ![Portada de PigmentAI](./pigmentAI)
 
-PigmentAI es un proyecto multidisciplinar que une arte e inteligencia artificial a través de un pipeline completo para el tratamiento y generación de imágenes artísticas. Desde la exploración de datos hasta la síntesis de nuevas obras, este repositorio ilustra cómo la IA puede analizar y crear arte digital de forma profesional.
+PigmentAI es un proyecto que une arte e inteligencia artificial a través de un pipeline completo para el tratamiento y generación de imágenes artísticas. Desde la exploración de datos hasta la síntesis de nuevas obras, este repositorio ilustra cómo la IA puede analizar y crear arte digital de forma profesional.
 
 ---
 
@@ -73,6 +73,12 @@ En **`05_Style_transfer.ipynb`** se implementa:
 - Algoritmo de transferencia de estilo (Gatys et al.).
 - Cálculo de pérdidas de contenido y estilo.
 - Generación de nuevas obras fusionando la estructura de una imagen con el estilo de otra.
+
+---
+
+## Archivos auxiliares
+
+- **class_weights.json**: Diccionario con los pesos de cada clase para balancear el entrenamiento en las tareas de clasificación.
 
 ---
 
