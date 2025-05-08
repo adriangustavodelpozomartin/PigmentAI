@@ -1,42 +1,105 @@
 # PigmentAI
-
-<p style="font-style: italic;
-          border-bottom: 2px solid #888;
-          display: inline-block;
-          margin-left: 0;">
-  Visión inteligente del arte
-</p>
+*Visión inteligente del arte*
 
 ![Portada de PigmentAI](./pigmentAI)
 
-PigmentAI es un proyecto multidisciplinar que une arte e inteligencia artificial a través de un pipeline completo para el tratamiento de imágenes. PigmentAI combina técnicas de procesamiento de imágenes, Machine Learning clásico y Deep Learning para ofrecer un flujo de trabajo completo en el dominio del arte digital. Desde la exploración inicial de datos (EDA) hasta el entrenamiento de modelos desde cero, pasando por la adaptación de arquitecturas preentrenadas, detección de objetos, reconocimiento facial y generación de nuevas imágenes con GANs, este repositorio muestra cómo la inteligencia artificial puede analizar y crear arte de forma profesional. Aquí encontrarás desde el análisis exploratorio de colecciones de cuadros hasta la generación de nuevas obras, pasando por:
-
-- **Análisis Exploratorio de Datos (EDA):** inspección de tipos de imagen, distribución de píxeles y balanceo de clases.  
-- **Modelos de Machine Learning clásico:** extracción de características y pruebas con clasificadores tradicionales.  
-- **Deep Learning – Clasificación de Imágenes:** arquitecturas construidas desde cero y con weights preentrenados, con curvas de accuracy/loss y evaluación de overfitting.  
-- **Detección de Objetos y Reconocimiento Facial:** pipelines basados en HOG+SVM, YOLO y otras técnicas para localizar y reconocer elementos en los lienzos.  
-- **Generación de Imágenes (GANs):** creación de nuevas imágenes estilo “obra de arte” por categoría.  
-- **Técnicas Adicionales (Opcional):** image captioning y OCR para describir y extraer texto de las imágenes.
+PigmentAI es un proyecto multidisciplinar que une arte e inteligencia artificial a través de un pipeline completo para el tratamiento y generación de imágenes artísticas. Desde la exploración de datos hasta la síntesis de nuevas obras, este repositorio ilustra cómo la IA puede analizar y crear arte digital de forma profesional.
 
 ---
 
 ## Índice
 
-- [Descripción del Proyecto](#descripción-del-proyecto)  
-- [1. Análisis Exploratorio de Datos (EDA)](#1-análisis-exploratorio-de-datos-eda)  
-- [2. Machine Learning Clásico](#2-machine-learning-clásico)  
-- [3. Deep Learning – Clasificación de Imágenes](#3-deep-learning--clasificación-de-imágenes)  
-  - [3.1 From Scratch (CNN)](#31-from-scratch-cnn)  
-  - [3.2 Transfer Learning](#32-transfer-learning)  
-- [4. Detección de Objetos](#4-detección-de-objetos)  
-- [5. Reconocimiento Facial](#5-reconocimiento-facial)  
-- [6. YOLO para Detección en Arte](#6-yolo-para-detección-en-arte)  
-- [7. Generación con GANs](#7-generación-con-gans)  
-- [8. Conclusiones y Futuras Líneas de Investigación](#8-conclusiones-y-futuras-líneas-de-investigación)  
-- [Estructura del Proyecto](#estructura-del-proyecto)  
-- [Requisitos](#requisitos)  
+- [Descripción del Proyecto](#descripción-del-proyecto)
+  - [1. Exploratory Data Analysis (EDA)](#1-exploratory-data-analysis-eda)
+  - [2. Reconocimiento de Objetos y Rostros](#2-reconocimiento-de-objetos-y-rostros)
+  - [3. CNN desde cero (From Scratch)](#3-cnn-desde-cero-from-scratch)
+  - [4. Transfer Learning](#4-transfer-learning)
+  - [5. Generación de Imágenes (Neural Style Transfer)](#5-generación-de-imágenes-neural-style-transfer)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Requisitos](#requisitos)
 - [Autores](#autores)
 
+---
+
+## Descripción del Proyecto
+
+PigmentAI nace con la misión de explorar la intersección entre arte y inteligencia artificial mediante un pipeline que abarca:
+- **Analizar** colecciones de arte digital para extraer información y patrones.
+- **Detectar** objetos y rostros en obras pictóricas usando técnicas clásicas y redes neuronales.
+- **Clasificar** imágenes mediante CNN implementadas desde cero y con modelos preentrenados.
+- **Generar** nuevas obras combinando estilo y contenido con algoritmos de transferencia de estilo.
+
+---
+
+### 1. Exploratory Data Analysis (EDA)
+
+En el notebook **`01_Exploratory_Data_Analysis.ipynb`** se realiza:
+- Selección y preprocesamiento de imágenes de obras de arte.
+- Análisis de distribuciones de píxeles (histogramas en escala de grises y canales RGB).
+- Estadísticas y visualizaciones para entender la naturaleza del dataset.
+
+---
+
+### 2. Reconocimiento de Objetos y Rostros
+
+El notebook **`02_Reconocimiento_Objetos_Rostros.ipynb`** incluye:
+- Detección y clasificación con HOG+SVM y modelos DNN preentrenados (SSD+ResNet10).
+- Evaluación comparativa de arquitecturas y ajuste de hiperparámetros.
+- Pipeline completo: carga de datos, entrenamiento, métricas y conclusiones.
+
+---
+
+### 3. CNN desde cero (From Scratch)
+
+En **`03_CNN_from_scratch.ipynb`** encontrarás:
+- Definición de una CNN propia con sus capas y funciones auxiliares.
+- Implementación de bucles de entrenamiento y validación.
+- Establecimiento de una línea base y optimización de hiperparámetros para mejorar precisión.
+
+---
+
+### 4. Transfer Learning
+
+El notebook **`04_transfer_learning.ipynb`** aborda:
+- Adaptación de modelos preentrenados (VGG-16, ResNet-50) al dominio artístico.
+- Aplicación de técnicas de data augmentation para robustecer el entrenamiento.
+- Comparativa de resultados y optimización de métricas de pérdida y precisión.
+
+---
+
+### 5. Generación de Imágenes (Neural Style Transfer)
+
+En **`05_Style_transfer.ipynb`** se implementa:
+- Algoritmo de transferencia de estilo (Gatys et al.).
+- Cálculo de pérdidas de contenido y estilo.
+- Generación de nuevas obras fusionando la estructura de una imagen con el estilo de otra.
+
+---
+
+## Estructura del Proyecto
+
+```plaintext
+PigmentAI/
+├── 01_Exploratory_Data_Analysis.ipynb
+├── 02_Reconocimiento_Objetos_Rostros.ipynb
+├── 03_CNN_from_scratch.ipynb
+├── 04_transfer_learning.ipynb
+├── 05_Style_transfer.ipynb
+├── class_weights.json
+├── requirements.txt
+├── pigmentAI        # Logo del proyecto
+└── README.md
+```
+
+---
+
+## Requisitos
+
+Para instalar las dependencias necesarias, ejecuta:
+
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
