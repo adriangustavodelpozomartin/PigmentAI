@@ -15,7 +15,9 @@ PigmentAI es un proyecto que une arte e inteligencia artificial a través de un 
   - [3. CNN desde cero (From Scratch)](#3-cnn-desde-cero-from-scratch)
   - [4. Transfer Learning](#4-transfer-learning)
   - [5. Generación de Imágenes (Neural Style Transfer)](#5-generación-de-imágenes-neural-style-transfer)
+- [Archivos auxiliares](#archivos-auxiliares)
 - [Estructura del Proyecto](#estructura-del-proyecto)
+- [Fuente de Datos](#fuente-de-datos)
 - [Requisitos](#requisitos)
 - [Autores](#autores)
 
@@ -79,6 +81,13 @@ En **`05_Style_transfer.ipynb`** se implementa:
 ## Archivos auxiliares
 
 - **class_weights.json**: Diccionario con los pesos de cada clase para balancear el entrenamiento en las tareas de clasificación.
+- **Pesos de modelos preentrenados**: Por restricciones de espacio, los archivos con los pesos entrenados no se incluyen en el repositorio, pero pueden generarse ejecutando el notebook correspondiente (por ejemplo, `03_CNN_from_scratch.ipynb`, `04_transfer_learning.ipynb` o `05_Style_transfer.ipynb`).
+
+---
+
+## Fuente de Datos
+
+Los datos utilizados en este proyecto provienen del dataset de Kaggle: [Best Artworks of All Time](https://www.kaggle.com/ikarus777/best-artworks-of-all-time).
 
 ---
 
