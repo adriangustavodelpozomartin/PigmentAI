@@ -16,8 +16,8 @@ PigmentAI es un proyecto que une arte e inteligencia artificial a través de un 
   - [4. Transfer Learning](#4-transfer-learning)
   - [5. Generación de Imágenes (Neural Style Transfer)](#5-generación-de-imágenes-neural-style-transfer)
 - [Archivos auxiliares](#archivos-auxiliares)
-- [Estructura del Proyecto](#estructura-del-proyecto)
 - [Fuente de Datos](#fuente-de-datos)
+- [Estructura del Proyecto](#estructura-del-proyecto)
 - [Requisitos](#requisitos)
 - [Autores](#autores)
 
