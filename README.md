@@ -15,7 +15,7 @@ PigmentAI es un proyecto que une arte e inteligencia artificial a través de un 
   - [3. CNN desde cero (From Scratch)](#3-cnn-desde-cero-from-scratch)
   - [4. Transfer Learning](#4-transfer-learning)
   - [5. Generación de Imágenes (Neural Style Transfer)](#5-generación-de-imágenes-neural-style-transfer)
-  - [6. Generative Adversarial Network (GAN)](#6-generatuve-adversarial-network-gan)
+  - [6. Generative Adversarial Network (GAN)](#6-generative-adversarial-network-gan)
 - [Archivos auxiliares](#archivos-auxiliares)
 - [Fuente de Datos](#fuente-de-datos)
 - [Estructura del Proyecto](#estructura-del-proyecto)
@@ -112,6 +112,7 @@ PigmentAI/
 ├── 03_CNN_from_scratch.ipynb
 ├── 04_transfer_learning.ipynb
 ├── 05_Style_transfer.ipynb
+├── 06_GAN.ipynb
 ├── class_weights.json
 ├── requirements.txt
 ├── pigmentAI        # Logo del proyecto
