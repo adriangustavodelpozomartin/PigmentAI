@@ -86,14 +86,14 @@ En **`06_GAN.ipynb`** se realiza:
 - **Configuración**: imports, parámetros globales, rutas del dataset y funciones auxiliares.  
 - **DCGAN clásico**: implementación del generador y discriminador convolucionales, ciclo de entrenamiento y generación de muestras artísticas.  
 - **DCGAN personalizado**: ajustes de arquitectura (InstanceNorm, SpectralNorm, Dropout) para mejorar la estabilidad y diversidad de las imágenes.  
-- **Comparación de modelos**: análisis cualitativo de las imágenes generadas por DCGAN clásico, DCGAN personalizado y un modelo DALL-E.  
+- **Comparación de modelos**: análisis cualitativo de las imágenes generadas por DCGAN clásico y DCGAN personalizado.  
 
 ---
 
 ## Archivos auxiliares
 
 - **class_weights.json**: Diccionario con los pesos de cada clase para balancear el entrenamiento en las tareas de clasificación.
-- **Pesos de modelos preentrenados**: Por restricciones de espacio, los archivos con los pesos entrenados no se incluyen en el repositorio, pero pueden generarse ejecutando el notebook correspondiente (por ejemplo, `03_CNN_from_scratch.ipynb`, `04_transfer_learning.ipynb` o `05_Style_transfer.ipynb`).
+- **Pesos de modelos preentrenados**: Por restricciones de espacio, los archivos con los pesos entrenados no se incluyen en el repositorio, pero pueden generarse ejecutando el notebook correspondiente (por ejemplo, `03_CNN_from_scratch.ipynb`, `04_transfer_learning.ipynb` o `06_GAN.ipynb`).
 
 ---
 
