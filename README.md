@@ -15,6 +15,7 @@ PigmentAI es un proyecto que une arte e inteligencia artificial a través de un 
   - [3. CNN desde cero (From Scratch)](#3-cnn-desde-cero-from-scratch)
   - [4. Transfer Learning](#4-transfer-learning)
   - [5. Generación de Imágenes (Neural Style Transfer)](#5-generación-de-imágenes-neural-style-transfer)
+  - [6. Generative Adversarial Network (GAN)](#6-generatuve-adversarial-network)
 - [Archivos auxiliares](#archivos-auxiliares)
 - [Fuente de Datos](#fuente-de-datos)
 - [Estructura del Proyecto](#estructura-del-proyecto)
@@ -75,6 +76,17 @@ En **`05_Style_transfer.ipynb`** se implementa:
 - Algoritmo de transferencia de estilo (Gatys et al.).
 - Cálculo de pérdidas de contenido y estilo.
 - Generación de nuevas obras fusionando la estructura de una imagen con el estilo de otra.
+
+---
+
+### 6. Generative Adversarial Network (GAN)
+
+En **`06_GAN.ipynb`** se realiza:  
+- **Introducción a las GAN**: definición de generador y discriminador y objetivo del entrenamiento adversarial.  
+- **Configuración**: imports, parámetros globales, rutas del dataset y funciones auxiliares.  
+- **DCGAN clásico**: implementación del generador y discriminador convolucionales, ciclo de entrenamiento y generación de muestras artísticas.  
+- **DCGAN personalizado**: ajustes de arquitectura (InstanceNorm, SpectralNorm, Dropout) para mejorar la estabilidad y diversidad de las imágenes.  
+- **Comparación de modelos**: análisis cualitativo de las imágenes generadas por DCGAN clásico, DCGAN personalizado y un modelo DALL-E.  
 
 ---
 
